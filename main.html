@@ -1,16 +1,44 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <header role="heading">
+        <h1>My Accessible Portfolio</h1>
+    </header>
 
+    <nav role="navigation">
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <img src="profile.jpg" alt="A picture of me" role="img">
+            <p>Hi, I'm [Your Name], a web developer passionate about accessibility and inclusive design. This is my portfolio where I showcase my work and share my journey.</p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul role="list">
+                <li role="listitem">Project 1: Accessible Website</li>
+                <li role="listitem">Project 2: Inclusive Web App</li>
+                <li role="listitem">Project 3: Accessibility Audit</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>If you'd like to get in touch or discuss a project, please email me at <a href="mailto:contact@example.com">contact@example.com</a>.</p>
+        </section>
+    </main>
 </body>
-
 </html>
